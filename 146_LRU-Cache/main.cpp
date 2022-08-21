@@ -45,10 +45,16 @@ public:
     }
 
     int get(int key) {
-        LRULinkNodeStru *flag = head;
+        LRULinkNodeStru *flag = nullptr;
+        LRULinkNodeStru *flagHead = head->next;
+        LRULinkNodeStru *flagRear = rear;
 
-        while (flag != nullptr) {
-            if ((flag != head) && (flag->key == key)) {
+        while (true) {
+            if (flagHead == nullptr || flagRear == nullptr) {
+                break;
+            }
+            if (flagHead->key == key || flagRear->key == key) {
+                flag = flagHead->key == key ? flagHead : flagRear;
                 if(flag != rear) {
                     flag->prev->next = flag->next;
                     flag->next->prev = flag->prev;
@@ -60,17 +66,27 @@ public:
                 }
                 return flag->value;
             }
-            flag = flag->next;
+            if (flagHead == flagRear) {
+                break;
+            }
+            flagHead = flagHead->next;
+            flagRear = flagRear->prev;
         }
-//        getShow(key);
+
         return -1;
     }
 
     void put(int key, int value) {
         LRULinkNodeStru *flag = head;
+        LRULinkNodeStru *flagHead = head->next;
+        LRULinkNodeStru *flagRear = rear;
 
-        while (flag != nullptr) {
-            if ((flag != head) && (flag->key == key)) {
+        while (true) {
+            if (flagHead == nullptr || flagRear == nullptr) {
+                break;
+            }
+            if (flagHead->key == key || flagRear->key == key) {
+                flag = flagHead->key == key ? flagHead : flagRear;
                 flag->value = value;
                 if(flag != rear) {
                     flag->prev->next = flag->next;
@@ -83,7 +99,8 @@ public:
                 }
                 return;
             }
-            flag = flag->next;
+            flagHead = flagHead->next;
+            flagRear = flagRear->prev;
         }
 
         flag = head->next;
