@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="146_LRU_Cache" targetName="146_LRU_Cache" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b86e4e-80b9-4429-94c8-733c2657018b" name="变更" comment="" />
+    <list default="true" id="89b86e4e-80b9-4429-94c8-733c2657018b" name="变更" comment="变更">
+      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/cache-v2-c82dfd285ba2bfe7a4fd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0d4c76af16319fbdeebe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-6617de4e231a7aebde7e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/index-2022-08-21T14-18-23-0522.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/target-146_LRU_Cache-Debug-d3b09f5439cfa45425e0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-9002b9f304a9a6bc85b8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/146_LRU_Cache.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/146_LRU-Cache/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/146_LRU-Cache/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +54,15 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/146_LRU-Cache/main.cpp" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DfvKp0kMiUool0rXyxScEsPxiU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,9 +78,22 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/xiao/Documents/code_projects/LeetCode"
+    "last_opened_file_path": "C:/Users/xiao/CLionProjects/LeetCode/146_LRU-Cache/CMakeLists.txt",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="146_LRU_Cache" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="146_LRU_Cache" TARGET_NAME="146_LRU_Cache" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="146_LRU_Cache" RUN_TARGET_NAME="146_LRU_Cache">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -47,6 +103,9 @@
       <option name="presentableId" value="Default" />
       <updated>1661102891054</updated>
       <workItem from="1661102892246" duration="37000" />
+      <workItem from="1663480379291" duration="186000" />
+      <workItem from="1663480577050" duration="79000" />
+      <workItem from="1663481863492" duration="2311000" />
     </task>
     <servers />
   </component>
@@ -63,5 +122,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

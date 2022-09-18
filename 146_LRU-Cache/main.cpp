@@ -44,6 +44,8 @@ public:
         rear = head;
     }
 
+    // 当前的搜索策略是在双端链表的两端向中间搜索，两个移动指针相遇时没有找到
+    // 变换策略为直接从unordered_map中查找对于key的结点地址 空间换时间
     int get(int key) {
         LRULinkNodeStru *flag = nullptr;
         LRULinkNodeStru *flagHead = head->next;
