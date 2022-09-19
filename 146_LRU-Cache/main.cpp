@@ -2,6 +2,12 @@
 #include <unordered_map>
 
 using namespace std;
+int g_debugSwitch = 0;
+
+#define DEBUG_PRINT(fmt, ...) \
+            if (g_debugSwitch != 0) { \
+                printf(fmt, ##__VA_ARGS__) \
+            }
 
 typedef struct LRULinkNode {
     int key;
@@ -40,6 +46,7 @@ public:
         LRU.head->next = nullptr;
         LRU.head->prev = nullptr;
         LRU.rear = LRU.head;
+        g_debugSwitch = 1;
     }
 
     void updateLatestModNode(LRULinkNodeStru *LRUNode) {
@@ -53,33 +60,39 @@ public:
         }
     }
 
-    // 当前的搜索策略是在双端链表的两端向中间搜索，两个移动指针相遇时没有找到
-    // 变换策略为直接从unordered_map中查找对于key的结点地址 空间换时间
+    /*
+     * 当前的搜索策略是在双端链表的两端向中间搜索，两个移动指针相遇时没有找到
+     * 变换策略为直接从unordered_map中查找对于key的结点地址 空间换时间
+     */
     int get(int key) {
         auto LRUNodeIt = LRUKeyToNodeAddrMap.find(key);
         if (LRUNodeIt != LRUKeyToNodeAddrMap.end()) {
             auto LRUNode = LRUNodeIt->second;
             auto ret = LRUNode->value;
 
-            /* 获取结点的值后，还要更新对应结点在LRU中的位置 map不用动
+            /*
+             * 获取结点的值后，还要更新对应结点在LRU中的位置 map不用动
              * 1、如果结点已经是尾结点，那就是最新的，不需要变更位置
-             * 2、如果结点非尾结点，需要移动结点至LRU尾部，同时变更LRU rear标志位 */
+             * 2、如果结点非尾结点，需要移动结点至LRU尾部，同时变更LRU rear标志位
+             */
             updateLatestModNode(LRUNode);
 
-            cout << "get pair: <" << key << ", " << ret << ">" << endl;
+            DEBUG_PRINT("get pair: <%d, %d>", key, ret);
             return ret;
         }
-        cout << "get pair: <" << key << ", " << -1 << ">" << endl;
+        DEBUG_PRINT("get pair: <%d, %d>", key, -1);
         return -1;
     }
 
     void put(int key, int value) {
         auto LRUNodeIt = LRUKeyToNodeAddrMap.find(key);
 
-        /* 查找对于key是否存在，若存在就更新value值以及结点位置
+        /*
+         * 查找对于key是否存在，若存在就更新value值以及结点位置
          * 若不存在，判断LRU 长度是否到达容量
          * 1、小于容量就新插入结点同时插入map
-         * 2、 等于容量就删除head后第一个元素同时删除map中的映射关系，再新插入结点同时插入map */
+         * 2、 等于容量就删除head后第一个元素同时删除map中的映射关系，再新插入结点同时插入map
+         */
         if (LRUNodeIt != LRUKeyToNodeAddrMap.end()) {
             auto LRUNode = LRUNodeIt->second;
             LRUNode->value = value;
@@ -92,15 +105,10 @@ public:
             auto keyTmp = temp->key;
             if (LRU.LRUCacheCap == 1) {
                 LRU.rear = LRU.head;
-
-                temp->prev = nullptr;
                 LRU.head->next = nullptr;
             } else {
                 LRU.head->next = temp->next;
                 temp->next->prev = LRU.head;
-
-                temp->prev = nullptr;
-                temp->next = nullptr;
             }
             delete temp;
             LRU.LRUCacheLen--;
@@ -111,7 +119,7 @@ public:
         auto newNode = makeNewNode(key, value);
         LRU.LRUCacheLen++;
         LRUKeyToNodeAddrMap.insert(make_pair(key, newNode));
-        cout << "put success: <" << key << ", " << value << ">" << endl;
+        DEBUG_PRINT("put success: <%d, %d>", key, ret);
         return;
     }
 
