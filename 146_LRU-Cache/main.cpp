@@ -6,7 +6,7 @@ int g_debugSwitch = 0;
 
 #define DEBUG_PRINT(fmt, ...) \
             if (g_debugSwitch != 0) { \
-                printf(fmt, ##__VA_ARGS__) \
+                printf(fmt, ##__VA_ARGS__); \
             }
 
 typedef struct LRULinkNode {
@@ -46,7 +46,7 @@ public:
         LRU.head->next = nullptr;
         LRU.head->prev = nullptr;
         LRU.rear = LRU.head;
-        g_debugSwitch = 1;
+        g_debugSwitch = 0;
     }
 
     void updateLatestModNode(LRULinkNodeStru *LRUNode) {
@@ -119,7 +119,7 @@ public:
         auto newNode = makeNewNode(key, value);
         LRU.LRUCacheLen++;
         LRUKeyToNodeAddrMap.insert(make_pair(key, newNode));
-        DEBUG_PRINT("put success: <%d, %d>", key, ret);
+        DEBUG_PRINT("put success: <%d, %d>", key, value);
         return;
     }
 
@@ -139,6 +139,6 @@ int main() {
     lRUCache->put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}
     cout << lRUCache->get(1) << ", ";    // 返回 -1 (未找到)
     cout << lRUCache->get(3) << ", ";    // 返回 3
-    cout << lRUCache->get(4) << endl;;    // 返回 4
+    cout << lRUCache->get(4) << endl;    // 返回 4
     return 0;
 }
